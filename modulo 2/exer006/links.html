@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-elementos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:active{
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+
+        a::after{
+            content: '[I Lov Ya all]';
+            background-color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.facebook.com/" target="_blank" rel="external">facebook</a></li>
+        <li><a href="https://www.tiktok.com/foryou?is_copy_url=1&is_from_webapp=v1" target="_blank" rel="external">Tik Tok</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a></li>
+    </ul>
+</body>
+</html>
